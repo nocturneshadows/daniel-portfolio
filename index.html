@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio de Marketing | Carlos Daniel Ruiz Aviles</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #111827; /* Gris oscuro */
+            color: #E5E7EB; /* Gris claro para texto */
+        }
+        .highlight {
+            color: #38BDF8; /* Azul cielo */
+        }
+        .gradient-text {
+            background: linear-gradient(to right, #38BDF8, #A78BFA);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .card {
+            background-color: #1F2937; /* Gris un poco más claro */
+            border: 1px solid #374151;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAVEGACIÓN -->
+    <nav class="bg-gray-900/80 backdrop-blur-sm sticky top-0 z-50 border-b border-gray-700">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center">
+                    <span class="font-bold text-xl gradient-text">Carlos Daniel Ruiz Aviles</span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#proyectos" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Proyectos</a>
+                        <a href="#sobre-mi" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Sobre Mí</a>
+                        <a href="#contacto" class="bg-sky-500 text-white px-3 py-2 rounded-md text-sm font-medium hover:bg-sky-600">Contacto</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- SECCIÓN HERO -->
+    <header class="py-24 sm:py-32">
+        <div class="max-w-4xl mx-auto text-center px-4">
+            <h1 class="text-4xl md:text-6xl font-black tracking-tight gradient-text">Estratega de Marketing Digital</h1>
+            <p class="mt-4 text-lg md:text-xl text-gray-300">Convierto ideas creativas en <span class="highlight">resultados de negocio medibles</span>. Especializado en branding, creación de contenido y optimización de campañas.</p>
+            <div class="mt-8 flex justify-center gap-4">
+                <a href="#proyectos" class="bg-sky-500 text-white px-8 py-3 rounded-md font-semibold hover:bg-sky-600 transition-colors">Ver mis proyectos</a>
+                <a href="https://www.linkedin.com/in/carlosdanielruizaviles/" target="_blank" class="bg-gray-700 text-white px-8 py-3 rounded-md font-semibold hover:bg-gray-600 transition-colors">LinkedIn</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- SECCIÓN PROYECTOS -->
+    <main id="proyectos" class="py-16 sm:py-24 bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Casos de Éxito</h2>
+            
+            <!-- CASO 1: STATES BUILDINGS -->
+            <div class="card rounded-lg p-6 md:p-8 mb-16">
+                <h3 class="text-2xl font-bold mb-2 gradient-text">States Buildings & Carports</h3>
+                <p class="text-lg font-semibold text-gray-400 mb-4">Transformación Digital y Crecimiento Exponencial</p>
+                
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="md:col-span-1">
+                        <h4 class="font-bold text-white mb-2">El Reto</h4>
+                        <p class="text-gray-400 text-sm">Aumentar las ventas y optimizar un alto costo por resultado en campañas de Meta Ads, además de explorar la expansión a un nuevo mercado (México).</p>
+                        <h4 class="font-bold text-white mt-6 mb-2">Resultados Clave</h4>
+                        <ul class="space-y-3">
+                            <li class="flex items-center"><span class="text-2xl font-bold highlight mr-3">+50%</span> en Ventas Totales</li>
+                            <li class="flex items-center"><span class="text-2xl font-bold highlight mr-3">-83%</span> en Coste por Mensaje</li>
+                            <li class="flex items-center"><span class="text-2xl font-bold highlight mr-3">x2</span> Crecimiento de Plantilla</li>
+                            <li class="flex items-center"><span class="text-2xl font-bold highlight mr-3">1</span> Nuevo Mercado Lanzado</li>
+                        </ul>
+                    </div>
+                    <div class="md:col-span-2">
+                        <h4 class="font-bold text-white mb-4">Estrategia y Evidencia</h4>
+                        <!-- Evidencia de Costos -->
+                        <div class="bg-gray-800 rounded-lg p-4 mb-4">
+                            <p class="text-sm font-semibold text-center mb-2">Optimización de Coste por Resultado (Meta Ads)</p>
+                            <img src="evidencia.jpg" alt="Evidencia de costos por resultado" class="rounded-md w-full object-cover" onerror="this.onerror=null;this.src='https://placehold.co/800x250';">
+                        </div>
+                        <!-- Evidencia de Posts -->
+                        <p class="text-sm font-semibold text-left mb-2 mt-6">Ejemplos de Contenido de Calidad</p>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <img src="Barns.jpg" alt="Post de marketing 1" class="rounded-lg object-cover aspect-square" onerror="this.onerror=null;this.src='https://placehold.co/400x400';">
+                            <img src="Barns2.jpg" alt="Post de marketing 2" class="rounded-lg object-cover aspect-square" onerror="this.onerror=null;this.src='https://placehold.co/400x400';">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- OTROS PROYECTOS -->
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- CASO 2: FUMICENTER RC -->
+                <div class="card rounded-lg p-6 flex flex-col">
+                    <h3 class="text-xl font-bold mb-2 gradient-text">Fumicenter RC</h3>
+                    <p class="font-semibold text-gray-400 mb-4">Posicionamiento Digital Local</p>
+                    <img src="fumicenter.jpg" alt="Post para Fumicenter" class="rounded-lg mb-4 w-full aspect-square object-cover" onerror="this.onerror=null;this.src='https://placehold.co/400x400';">
+                    <p class="text-gray-400 text-sm mt-auto">Creación de contenido y estrategia de redes sociales para construir una presencia online desde cero, generando reconocimiento de marca y leads en Tijuana.</p>
+                </div>
+
+                <!-- CASO 3: NEGOCIO DE FACIALES -->
+                <div class="card rounded-lg p-6 flex flex-col">
+                    <h3 class="text-xl font-bold mb-2 gradient-text">Marca de Faciales (En Proceso)</h3>
+                    <p class="font-semibold text-gray-400 mb-4">Branding y Creación de Identidad</p>
+                    <img src="frida.jpg" alt="Branding para negocio de faciales" class="rounded-lg mb-4 w-full aspect-square object-cover" onerror="this.onerror=null;this.src='https://placehold.co/400x400';">
+                    <p class="text-gray-400 text-sm mt-auto">Desarrollo completo de la identidad de marca, desde el concepto y moodboard hasta el diseño de logo y guías de estilo, preparando el negocio para un lanzamiento exitoso.</p>
+                </div>
+
+                <!-- CASO 4: TU AGENCIA -->
+                <div class="card rounded-lg p-6 flex flex-col">
+                    <h3 class="text-xl font-bold mb-2 gradient-text">Mi Agencia de Marketing</h3>
+                    <p class="font-semibold text-gray-400 mb-4">Emprendimiento y Visión</p>
+                    <img src="agencia.jpg" alt="Post de mi agencia" class="rounded-lg mb-4 w-full aspect-square object-cover" onerror="this.onerror=null;this.src='https://placehold.co/400x400';">
+                    <div class="mt-auto">
+                        <p class="text-gray-400 text-sm mb-4">Aplicando mi experiencia para ayudar a otras empresas a crecer. Este es mi proyecto personal donde pongo en práctica mi visión del marketing moderno.</p>
+                        <a href="https://nocturneshadows.github.io/daniel-aviles/" target="_blank" rel="noopener noreferrer" class="text-sky-400 font-semibold hover:text-sky-300">Visitar web de la agencia &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- SOBRE MÍ -->
+    <section id="sobre-mi" class="py-16 sm:py-24">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+             <img src="daniel.jpg" alt="Foto de Carlos Ruiz" class="w-32 h-32 rounded-full mx-auto mb-6 border-4 border-gray-700" onerror="this.onerror=null;this.src='https://placehold.co/150x150';">
+            <h2 class="text-3xl font-bold mb-4">Hola, soy Carlos.</h2>
+            <p class="text-gray-300 text-lg max-w-2xl mx-auto">Originario de Tijuana y actualmente basado en Minsk. Mi pasión es entender el "porqué" detrás del comportamiento del consumidor y usar esa información para construir marcas que conecten de verdad con las personas. Creo en el marketing que aporta valor, no solo el que interrumpe. Cuando no estoy analizando métricas o diseñando campañas, me encontrarás explorando una nueva ciudad o aprendiendo un nuevo idioma.</p>
+        </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <footer id="contacto" class="bg-gray-900 py-16 sm:py-24">
+        <div class="max-w-2xl mx-auto text-center px-4">
+            <h2 class="text-3xl font-bold mb-4">Hablemos de tu próximo proyecto.</h2>
+            <p class="text-gray-400 mb-8">Estoy disponible para oportunidades freelance y roles a tiempo completo. Si crees que mi visión y experiencia pueden aportar valor a tu equipo, me encantaría conversar.</p>
+            <a href="mailto:acteck664@icloud.com" class="inline-block bg-sky-500 text-white text-lg px-10 py-4 rounded-md font-semibold hover:bg-sky-600 transition-colors">acteck664@icloud.com</a>
+            <div class="mt-8 text-gray-500">
+                <p>Carlos Daniel Ruiz Aviles | +52 664 179 7371</p>
+                <p>Minsk, Bielorrusia</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
